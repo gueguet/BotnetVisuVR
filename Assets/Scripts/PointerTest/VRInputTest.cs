@@ -95,29 +95,29 @@ public class VRInputTest : BaseInputModule
                     break;
 
 
-                case "NodeIsMalButton":
+                //case "NodeIsMalButton":
 
 
-                    //maliciousNode.GetComponent<Renderer>().material.color = Color.red;
-                    //launchText.text = "CE NOEUD EST MALICIEUX : " + maliciousNode.name;
+                //    //maliciousNode.GetComponent<Renderer>().material.color = Color.red;
+                //    //launchText.text = "CE NOEUD EST MALICIEUX : " + maliciousNode.name;
 
-                    //launchText.text = "DEFINIR UN NOEUD COMME MALICIEUX";
+                //    //launchText.text = "DEFINIR UN NOEUD COMME MALICIEUX";
 
-                    try
-                    {
-                        var maliciousNode = GameObject.Find("Pointer").GetComponent<Pointer>().currentObject;
-                        //currentVRText.text = maliciousNode.name;
-                        maliciousNode.GetComponent<Renderer>().material.color = Color.red;
-                        maliciousNode.GetComponent<LineRenderer>().endColor = Color.red;
-                        maliciousNode.GetComponent<LineRenderer>().startColor = Color.red;
-                    }
+                //    try
+                //    {
+                //        var maliciousNode = GameObject.Find("Pointer").GetComponent<Pointer>().currentObject;
+                //        //currentVRText.text = maliciousNode.name;
+                //        maliciousNode.GetComponent<Renderer>().material.color = Color.red;
+                //        maliciousNode.GetComponent<LineRenderer>().endColor = Color.red;
+                //        maliciousNode.GetComponent<LineRenderer>().startColor = Color.red;
+                //    }
 
-                    catch
-                    {
-                        //currentObjectText.text = "dommage";
-                    }
+                //    catch
+                //    {
+                //        //currentObjectText.text = "dommage";
+                //    }
 
-                    break;
+                //    break;
 
 
                 // LABEL LATER

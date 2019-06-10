@@ -91,9 +91,9 @@ public class Pointer : MonoBehaviour
 
                 objectHitName.text = nodeInfoString;
 
-                hit.transform.gameObject.GetComponent<Renderer>().material = (Material) Resources.Load("GreenSubNodeMat");
-                hit.transform.gameObject.GetComponent<LineRenderer>().startColor = Color.green;
-                hit.transform.gameObject.GetComponent<LineRenderer>().endColor = Color.green;
+                //hit.transform.gameObject.GetComponent<Renderer>().material = (Material) Resources.Load("GreenSubNodeMat");
+                //hit.transform.gameObject.GetComponent<LineRenderer>().startColor = Color.green;
+                //hit.transform.gameObject.GetComponent<LineRenderer>().endColor = Color.green;
 
                 //saveNodeTouched = hit.transform.gameObject;
 

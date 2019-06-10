@@ -1,8 +1,8 @@
 Win64
 PlayerPath?
-S:/gverdinpol/Demo3DCyberBotnet/3DCyberVisualization.exe
+S:/gverdinpol/fijeiojoife/3DCyberVisualization.exe
 SceneListBegin?
-Assets/Scenes/MainScene.unity
+Assets/Scenes/PlaceNodeScene.unity
 SceneListEnd?
 3800f5e3156a1e54f5c990c4e514eda1 SteamVR.dll:Valve.VR.SteamVR_Ears
 13c40e71b4af669ad3f56e281300e612 SteamVR.dll:Valve.VR.InteractionSystem.LinearAnimation
@@ -241,7 +241,7 @@ badc8d355a63a7b0291547b12e2277fc SteamVR.dll:Valve.VR.InteractionSystem.SpawnAnd
 c6bfb6b96dfa8d98e8ee48353bcacfe0 SteamVR.dll:Valve.VR.InteractionSystem.LinearBlendshape
 29d518781ccba8971abc835d8d13df67 SteamVR.dll:Valve.VR.InteractionSystem.Sample.ButtonExample
 08c544de23e8d45042a1c8322312f30b SteamVR.dll:Valve.VR.InteractionSystem.ControllerHoverHighlight
-a4debf7693daa93521f7fc8a2c81da8f Assembly-CSharp.dll:.GraphManager
+bb2eda2abd2e8fcf59220980035bee6b Assembly-CSharp.dll:.GraphManager
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 49963d3296c2dd1edfca69785dccfef3 SteamVR.dll:Valve.VR.InteractionSystem.ControllerButtonHints
 71bb6a6b6c8f052f948db64c7dd3ca4f SteamVR.dll:Valve.VR.InteractionSystem.DontDestroyOnLoad
@@ -445,3 +445,4 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+d0c06edb61bf97017035b3dc59736fb4 Assembly-CSharp.dll:.PlacementNodeManager

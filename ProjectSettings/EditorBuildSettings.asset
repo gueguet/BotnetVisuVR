@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PointerScene.unity
     guid: cc9812263a59b2e4c89ef0db469841cb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 73cdb70dc03d8604dba14e9680c749df
   - enabled: 0
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/NEWSCENEPOINTER.unity
     guid: b12b9745fd505b34c8d8ff1da6cf2f00
+  - enabled: 1
+    path: Assets/Scenes/PlaceNodeScene.unity
+    guid: 0d1d4b52ab0884c4f8ff5b6300c69ab6
   m_configObjects: {}
