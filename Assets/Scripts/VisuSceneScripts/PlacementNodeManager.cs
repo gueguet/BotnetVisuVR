@@ -13,6 +13,7 @@ public class PlacementNodeManager : MonoBehaviour
     // General info about source node
     private List<float> boundaries = new List<float>();
 
+    // Class NodeInfo
     public class NodeInfo
     {
         public float x;
@@ -107,6 +108,8 @@ public class PlacementNodeManager : MonoBehaviour
             sourcePlaceNode = Instantiate(nodeSourcePrefab, Vector3.zero, Quaternion.identity);
             sourcePlaceNode.transform.SetParent(originPlacement.transform);
 
+            //sourcePlaceNode.GetComponent<IpInfo>().fullIP = 
+
             var out_x = convertData(boundaries[0], boundaries[1], nodeInfo.x);
             var out_y = convertData(boundaries[2], boundaries[3], nodeInfo.y);
             var out_z = convertData(boundaries[4], boundaries[5], nodeInfo.z);
@@ -116,8 +119,8 @@ public class PlacementNodeManager : MonoBehaviour
 
             sourcePlaceNode.transform.localPosition = new Vector3(out_x, out_y, out_z);
 
-            var tm = sourcePlaceNode.GetComponent<TextMesh>();
-            tm.text = "Position : 10." + nodeInfo.x + "." + nodeInfo.y + "." + nodeInfo.z; 
+            //var tm = sourcePlaceNode.GetComponent<TextMesh>();
+            //tm.text = "Position : 10." + nodeInfo.x + "." + nodeInfo.y + "." + nodeInfo.z; 
 
 
 

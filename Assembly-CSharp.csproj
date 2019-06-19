@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\DstNodeData.cs" />
     <Compile Include="Assets\Scripts\Grabable.cs" />
     <Compile Include="Assets\Scripts\GraphManager.cs" />
+    <Compile Include="Assets\Scripts\IpInfo.cs" />
     <Compile Include="Assets\Scripts\Pointer.cs" />
     <Compile Include="Assets\Scripts\PointerTest\PointerTest.cs" />
     <Compile Include="Assets\Scripts\PointerTest\VRInputTest.cs" />

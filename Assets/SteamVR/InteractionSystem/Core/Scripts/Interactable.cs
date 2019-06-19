@@ -5,15 +5,21 @@
 //=============================================================================
 
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace Valve.VR.InteractionSystem
 {
+
     //-------------------------------------------------------------------------
     public class Interactable : MonoBehaviour
     {
+
+        // UI 
+        private Text nodeInfoText;
+
         [Tooltip("Activates an action set on attach and deactivates on detach")]
         public SteamVR_ActionSet activateActionSetOnAttach;
 
@@ -240,6 +246,10 @@ namespace Valve.VR.InteractionSystem
             {
                 CreateHighlightRenderers();
                 UpdateHighlightRenderers();
+
+                nodeInfoText = GameObject.Find("NodeText").GetComponent<Text>();
+                nodeInfoText.text = this.gameObject.transform.position.ToString();
+                Debug.Log(this.gameObject.transform.position.ToString());
             }
         }
 
@@ -261,6 +271,8 @@ namespace Valve.VR.InteractionSystem
             if (highlightOnHover)
             {
                 UpdateHighlightRenderers();
+
+
 
                 if (isHovering == false && highlightHolder != null)
                     Destroy(highlightHolder);
