@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/PointerScene.unity
+    path: Assets/Scenes/PointerTestScene.unity
     guid: cc9812263a59b2e4c89ef0db469841cb
   - enabled: 0
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/BotnetVisuScene.unity
     guid: 73cdb70dc03d8604dba14e9680c749df
   - enabled: 0
     path: Assets/SteamVR/InteractionSystem/Samples/Interactions_Example.unity
@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GrabObjectScene.unity
     guid: c5e39f897cf66e341b212bc8296a6552
   - enabled: 0
-    path: Assets/Scenes/NEWSCENEPOINTER.unity
+    path: Assets/Scenes/PointerSceneTest.unity
     guid: b12b9745fd505b34c8d8ff1da6cf2f00
   - enabled: 1
     path: Assets/Scenes/PlaceNodeScene.unity

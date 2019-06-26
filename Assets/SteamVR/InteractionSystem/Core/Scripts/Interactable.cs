@@ -9,6 +9,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 namespace Valve.VR.InteractionSystem
 {
@@ -16,9 +17,12 @@ namespace Valve.VR.InteractionSystem
     //-------------------------------------------------------------------------
     public class Interactable : MonoBehaviour
     {
-
         // UI 
         private Text nodeInfoText;
+        private GameObject sourceNode;
+        
+
+        
 
         [Tooltip("Activates an action set on attach and deactivates on detach")]
         public SteamVR_ActionSet activateActionSetOnAttach;
@@ -94,6 +98,8 @@ namespace Valve.VR.InteractionSystem
 
         protected virtual void Start()
         {
+            nodeInfoText = GameObject.Find("NodeText").GetComponent<Text>();
+
             highlightMat = (Material)Resources.Load("SteamVR_HoverHighlight", typeof(Material));
 
             if (highlightMat == null)
@@ -247,9 +253,25 @@ namespace Valve.VR.InteractionSystem
                 CreateHighlightRenderers();
                 UpdateHighlightRenderers();
 
-                nodeInfoText = GameObject.Find("NodeText").GetComponent<Text>();
-                nodeInfoText.text = this.gameObject.transform.position.ToString();
-                Debug.Log(this.gameObject.transform.position.ToString());
+                //Debug.Log(this.gameObject.transform.position.ToString());
+                //var fullIP = this.GetComponent<Ip>
+                //nodeInfoText.text = this.gameObject.GetComponent<IpInfo>().fullIP.toString();
+
+                try
+                {
+
+                    Debug.Log(gameObject.name);
+                    nodeInfoText.text = gameObject.name;
+
+
+                } 
+
+                catch
+                {
+                    Debug.Log("error");
+                }
+
+
             }
         }
 

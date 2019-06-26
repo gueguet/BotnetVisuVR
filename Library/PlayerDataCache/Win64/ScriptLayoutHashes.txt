@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-S:/gverdinpol/Test2/3DCyberVisualization.exe
+S:/gverdinpol/25_june_build/3DCyberVisualization.exe
 SceneListBegin?
 Assets/Scenes/PlaceNodeScene.unity
 SceneListEnd?
@@ -25,7 +25,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.G
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 5d52bfc1b64c2b218b652ad9512b8a9f SteamVR.dll:Valve.VR.InteractionSystem.Throwable
-d0c06edb61bf97017035b3dc59736fb4 Assembly-CSharp.dll:.PlacementNodeManager
+0c49773505678bc6f810dc383d7e3e18 Assembly-CSharp.dll:.PlacementNodeManager
 8528d6b2bf8de7e441f1c781a2231062 SteamVR.dll:.AmbientSound
 c8ebe1a6445d89267090af7e7c5c957f SteamVR.dll:Valve.VR.InteractionSystem.LinearAudioPitch
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
@@ -332,6 +332,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 9cdd5757306ab9183dcec420028a84cf SteamVR.dll:Valve.VR.SteamVR_PlayArea
 71bb6a6b6c8f052f948db64c7dd3ca4f SteamVR.dll:Valve.VR.SteamVR_SphericalProjection
 581f3710e1186967c9213e3923915a29 SteamVR.dll:Valve.VR.InteractionSystem.Sample.BuggyController
+676198c06b555dcdb9c23bcc78d26036 Assembly-CSharp.dll:.IpInfo
 04ec49ccce6820e90ffda40a6d2e3a32 SteamVR.dll:Valve.VR.SteamVR_Overlay
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
@@ -446,3 +447,4 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+6c5fd3ecd6cf007de367cf5ca05738fe Assembly-CSharp.dll:.NodeIpInfo

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PlaceNodeScene.unity
+- path: Assets/Scenes/SpherePlacementIPScene.unity
   isLoaded: 1
   isActive: 1

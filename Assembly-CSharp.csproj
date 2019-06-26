@@ -60,18 +60,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CsvReader.cs" />
-    <Compile Include="Assets\Scripts\DrawLine.cs" />
-    <Compile Include="Assets\Scripts\DropdownScripts\DropDownManager.cs" />
-    <Compile Include="Assets\Scripts\DstNodeData.cs" />
-    <Compile Include="Assets\Scripts\Grabable.cs" />
-    <Compile Include="Assets\Scripts\GraphManager.cs" />
-    <Compile Include="Assets\Scripts\IpInfo.cs" />
-    <Compile Include="Assets\Scripts\Pointer.cs" />
-    <Compile Include="Assets\Scripts\PointerTest\PointerTest.cs" />
-    <Compile Include="Assets\Scripts\PointerTest\VRInputTest.cs" />
-    <Compile Include="Assets\Scripts\SrcNodeData.cs" />
-    <Compile Include="Assets\Scripts\VisuSceneScripts\PlacementNodeManager.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\CsvReader.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\DrawLine.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\DropDownManager.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\DstNodeData.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\Grabable.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\GraphManager.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\IpInfo.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\Pointer.cs" />
+    <Compile Include="Assets\Scripts\BotnetScript\SrcNodeData.cs" />
+    <Compile Include="Assets\Scripts\PlaceNodeScript\NodeIpInfo.cs" />
+    <Compile Include="Assets\Scripts\PlaceNodeScript\PlacementNodeManager.cs" />
+    <Compile Include="Assets\Scripts\PointerTestScript\PointerTest.cs" />
+    <Compile Include="Assets\Scripts\PointerTestScript\VRInputTest.cs" />
+    <Compile Include="Assets\Scripts\SpherePlacementIPScripts\CsvReaderController.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
