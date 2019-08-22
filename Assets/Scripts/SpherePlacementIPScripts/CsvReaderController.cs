@@ -16,7 +16,7 @@ public class CsvReaderController : MonoBehaviour
 
     void Start()
     {
-        //readCsvSource();
+        readCsvSource();
         readCsvDest();
     }
 
@@ -26,11 +26,16 @@ public class CsvReaderController : MonoBehaviour
         
     }
 
+
     public List<float> convSpheCart(float r, float theta, float phi)
     {
         var x = r * Mathf.Cos(theta * (Mathf.PI / 180.0f)) * Mathf.Sin(phi * (Mathf.PI / 180.0f));
         var z = r * Mathf.Sin(theta * (Mathf.PI / 180.0f)) * Mathf.Sin(phi * (Mathf.PI / 180.0f));
         var y = r * Mathf.Cos(phi * (Mathf.PI / 180.0f));
+
+        var conv_r = x / 40.0;
+        var conv_phi = (z - 1.0) * (360 / 9);
+        var conv_theta = (y - 1.0) * (360 / 100);
 
         var listCartesianCoord = new List<float>();
 
@@ -77,7 +82,7 @@ public class CsvReaderController : MonoBehaviour
 
             // spherique --> cartesian coordinates
             var listCartesianCoord = new List<float>();
-            listCartesianCoord = convSpheCart(r_ip, theta_ip, phi_ip);
+            listCartesianCoord = convSpheCart(r_ip, phi_ip, theta_ip);
 
             // instantiate the node
             var instantiateNode = Instantiate(nodePrefabSrc, Vector3.zero, Quaternion.identity);
@@ -116,7 +121,9 @@ public class CsvReaderController : MonoBehaviour
 
             // spherique --> cartesian coordinates
             var listCartesianCoord = new List<float>();
-            listCartesianCoord = convSpheCart(r_ip, theta_ip, phi_ip);
+
+            
+            listCartesianCoord = convSpheCart(r_ip, phi_ip, theta_ip);
 
             // instantiate the node
             var instantiateNodeDst = Instantiate(nodePrefabDst, Vector3.zero, Quaternion.identity);
@@ -125,5 +132,7 @@ public class CsvReaderController : MonoBehaviour
             instantiateNodeDst.transform.localPosition = new Vector3(listCartesianCoord[0], listCartesianCoord[2], listCartesianCoord[1]);
         }
     }
+
+    
 
 }
